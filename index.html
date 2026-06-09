@@ -174,8 +174,36 @@
           Our method demonstrates superior performance against baseline configurations (the raw initial mask $M_{ini}$ and static uniform dilation) across multiple state-of-the-art NR-IQA evaluation metrics (Q-Align, TOPIQ, LIQE, MANIQA) on both the COCO Animal and Object datasets.
         </p>
         
+        <style>
+          @media (max-width: 768px) {
+            .responsive-table {
+              font-size: 0.8rem;
+            }
+            .responsive-table th, 
+            .responsive-table td {
+              padding: 0.3em 0.5em !important;
+            }
+            .scroll-hint {
+              display: block;
+              font-size: 0.8rem;
+              color: #666;
+              text-align: right;
+              margin-bottom: 0.5rem;
+            }
+          }
+          @media (min-width: 769px) {
+            .scroll-hint {
+              display: none;
+            }
+          }
+        </style>
+
+        <div class="scroll-hint">
+          <span class="icon"><i class="fas fa-arrows-alt-h"></i></span> 横にスクロールできます
+        </div>
+
         <div class="table-container" style="width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch;">
-          <table class="table is-bordered is-striped is-narrow is-hoverable" style="min-width: 720px; white-space: nowrap; margin: 0 auto;">
+          <table class="table is-bordered is-striped is-narrow is-hoverable responsive-table" style="white-space: nowrap; margin: 0 auto;">
             <thead>
               <tr>
                 <th rowspan="2" style="vertical-align: middle; text-align: center;">Masks used for Inpainting</th>
@@ -214,7 +242,7 @@
 
       </div>
     </div>
-</section>
+  </section>
   
   <section class="section">
     <div class="container is-max-desktop">
