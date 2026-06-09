@@ -36,6 +36,28 @@
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <style>
+    /* 長い英単語やURLの強制折り返し */
+    body, .content p, .content h1, .content h2, .content h3, .content h4 {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      word-break: auto-phrase; /* スマホでの不自然な改行を軽減 */
+    }
+
+    /* MathJaxのブロック数式がはみ出す場合の横スクロール許可 */
+    mjx-container[display="true"] {
+      max-width: 100%;
+      overflow-x: auto !important;
+      overflow-y: hidden;
+    }
+
+    /* ページ全体が横揺れするのを防ぐ */
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+  </style>
   
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
@@ -254,7 +276,7 @@
           <i class="fas fa-copy"></i> <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code" style="background-color: #2f2f2f; color: #fff; padding: 15px; border-radius: 5px;"><code>@article{uchiyama2025mask,
+      <pre id="bibtex-code" style="background-color: #2f2f2f; color: #fff; padding: 15px; border-radius: 5px; overflow-x: auto; white-space: pre;"><code>@article{uchiyama2025mask,<code>@article{uchiyama2025mask,
   author={Uchiyama, Taiki and Isogawa, Mariko},
   journal={IEEE Open Journal of Signal Processing}, 
   title={Mask Optimization for Image Inpainting Using No-Reference Image Quality Assessment}, 
