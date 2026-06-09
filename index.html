@@ -152,48 +152,51 @@
           Our method demonstrates superior performance against baseline configurations (the raw initial mask $M_{ini}$ and static uniform dilation) across multiple state-of-the-art NR-IQA evaluation metrics (Q-Align, TOPIQ, LIQE, MANIQA) on both the COCO Animal and Object datasets.
         </p>
         
-        <div class="table-container" style="width: 100%; overflow-x: auto !important; display: block !important; -webkit-overflow-scrolling: touch;">
-          <table class="table is-bordered is-striped is-narrow is-hoverable" style="min-width: 720px !important; width: max-content !important; font-size: 0.85rem; table-layout: auto !important;">
-            <thead>
-              <tr>
-                <th rowspan="2" style="vertical-align : middle;text-align:center;">Masks used for Inpainting</th>
-                <th colspan="4" style="text-align:center;">Animal Dataset (Cat)</th>
-                <th colspan="4" style="text-align:center;">Object Dataset (Car)</th>
-              </tr>
-              <tr>
-                <th>Q-Align (↑)</th><th>TOPIQ (↑)</th><th>LIQE (↑)</th><th>MANIQA (↑)</th>
-                <th>Q-Align (↑)</th><th>TOPIQ (↑)</th><th>LIQE (↑)</th><th>MANIQA (↑)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>$M_{ini}$ (Initial)</td>
-                <td>2.480</td><td>0.6072</td><td>3.694</td><td>0.4225</td>
-                <td>2.690</td><td>0.6709</td><td>4.136</td><td>0.4517</td>
-              </tr>
-              <tr>
-                <td>Uniformly Dilated $M_{ini}$</td>
-                <td>2.413</td><td>0.6080</td><td>3.580</td><td>0.4127</td>
-                <td>2.701</td><td>0.6702</td><td>4.154</td><td>0.4527</td>
-              </tr>
-              <tr style="font-weight: bold; background-color: #f5f5f5;">
-                <td>$M_{pred}$ w/ EdgeConnect (Ours)</td>
-                <td>2.484</td><td><u>0.6097</u></td><td>3.705</td><td><b>0.4231</b></td>
-                <td><b>2.755</b></td><td><b>0.6782</b></td><td><b>4.231</b></td><td><b>0.4589</b></td>
-              </tr>
-              <tr style="font-weight: bold;">
-                <td>$M_{pred}$ w/ LaMa (Ours)</td>
-                <td><b>2.487</b></td><td>0.6090</td><td><b>3.712</b></td><td><u>0.4229</u></td>
-                <td><u>2.712</u></td><td><u>0.6736</u></td><td><u>4.171</u></td><td><u>0.4531</u></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <div style="width: 100%; max-width: 100%; overflow: hidden;">
+
+          <div class="table-container" style="width: 100%; overflow-x: auto !important; display: block !important; -webkit-overflow-scrolling: touch;">
+            <table class="table is-bordered is-striped is-narrow is-hoverable" style="min-width: 720px !important; width: max-content !important; font-size: 0.85rem; table-layout: auto !important;">
+              <thead>
+                <tr>
+                  <th rowspan="2" style="vertical-align : middle;text-align:center;">Masks used for Inpainting</th>
+                  <th colspan="4" style="text-align:center;">Animal Dataset (Cat)</th>
+                  <th colspan="4" style="text-align:center;">Object Dataset (Car)</th>
+                </tr>
+                <tr>
+                  <th>Q-Align (↑)</th><th>TOPIQ (↑)</th><th>LIQE (↑)</th><th>MANIQA (↑)</th>
+                  <th>Q-Align (↑)</th><th>TOPIQ (↑)</th><th>LIQE (↑)</th><th>MANIQA (↑)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>$M_{ini}$ (Initial)</td>
+                  <td>2.480</td><td>0.6072</td><td>3.694</td><td>0.4225</td>
+                  <td>2.690</td><td>0.6709</td><td>4.136</td><td>0.4517</td>
+                </tr>
+                <tr>
+                  <td>Uniformly Dilated $M_{ini}$</td>
+                  <td>2.413</td><td>0.6080</td><td>3.580</td><td>0.4127</td>
+                  <td>2.701</td><td>0.6702</td><td>4.154</td><td>0.4527</td>
+                </tr>
+                <tr style="font-weight: bold; background-color: #f5f5f5;">
+                  <td>$M_{pred}$ w/ EdgeConnect (Ours)</td>
+                  <td>2.484</td><td><u>0.6097</u></td><td>3.705</td><td><b>0.4231</b></td>
+                  <td><b>2.755</b></td><td><b>0.6782</b></td><td><b>4.231</b></td><td><b>0.4589</b></td>
+                </tr>
+                <tr style="font-weight: bold;">
+                  <td>$M_{pred}$ w/ LaMa (Ours)</td>
+                  <td><b>2.487</b></td><td>0.6090</td><td><b>3.712</b></td><td><u>0.4229</u></td>
+                  <td><u>2.712</u></td><td><u>0.6736</u></td><td><u>4.171</u></td><td><u>0.4531</u></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div> </div>
     </div>
   </section>
-
-<section class="section">
+  
+  <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-3 has-text-centered">Qualitative Comparison</h2>
       <div class="content has-text-centered mt-5">
